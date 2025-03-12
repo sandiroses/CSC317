@@ -1,0 +1,162 @@
+/*
+   AI-Generated CSS: Galaxy Night Sky Theme 🌌✨
+   Generated using AI based on the following image and prompt:
+   Reference Image: https://your-image-link.com
+   Prompt: "Create a cosmic night sky portfolio theme with deep blue, glowing neon accents, and a futuristic, space-like aesthetic."
+*/
+
+/* Theme Colors */
+:root {
+    --background-color: #0d0d2b;
+    --accent-color: #8a2be2;
+    --glow-blue: #00f7ff;
+    --text-color: #ffffff;
+    --shadow-light: rgba(255, 255, 255, 0.2);
+    --font-heading: 'Orbitron', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
+}
+
+/* General Styling */
+body {
+    font-family: var(--font-body);
+    background: radial-gradient(circle, rgba(13, 13, 43, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background-attachment: fixed;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Animated Star Background */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png'); /* Starfield Overlay */
+    opacity: 0.3;
+    z-index: -1;
+    animation: twinkle 5s infinite alternate ease-in-out;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0.3; }
+    50% { opacity: 0.5; }
+    100% { opacity: 0.3; }
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, var(--background-color), black);
+    color: var(--text-color);
+    padding: 50px 0;
+    font-family: var(--font-heading);
+    font-size: 2em;
+    text-shadow: 0px 0px 15px var(--glow-blue);
+    border-bottom: 2px solid var(--glow-blue);
+}
+
+/* Navigation Bar */
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px var(--shadow-light);
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: var(--glow-blue);
+    text-shadow: 0 0 10px var(--glow-blue);
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    width: 80%;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px var(--shadow-light);
+}
+
+/* Buttons */
+button {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 15px var(--glow-blue);
+}
+
+button:hover {
+    background-color: var(--glow-blue);
+    transform: scale(1.1);
+}
+
+/* Links */
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+a:hover {
+    color: var(--glow-blue);
+    text-shadow: 0px 0px 15px var(--glow-blue);
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid var(--glow-blue);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}

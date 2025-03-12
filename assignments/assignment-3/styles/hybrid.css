@@ -1,0 +1,150 @@
+/*
+    Hybrid CSS 
+   - Merging Bioluminescent and Galaxy themes
+   - Not too fancy, just making it look cool while keeping it functional!
+*/
+
+/* Theme Colors */
+:root {
+    --background-color: #0d0d2b; /* Dark blue from ai-2.css */
+    --accent-color: #00f7ff; /* Glow effect from styles.css */
+    --text-color: #ffffff;
+    --shadow-light: rgba(255, 255, 255, 0.2);
+    --font-heading: 'Orbitron', sans-serif; /* Galaxy theme font */
+    --font-body: 'Montserrat', sans-serif;
+}
+
+/* General Styling */
+body {
+    font-family: var(--font-body);
+    background: radial-gradient(circle, var(--background-color) 0%, black 100%);
+    background-attachment: fixed;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Starry Background (from ai-2.css, tweaked) */
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png'); /* Star effect */
+    opacity: 0.2; /* Reduced opacity to not be too distracting */
+    z-index: -1;
+}
+
+/* Header (from ai-2.css, glow added from styles.css) */
+header {
+    background: linear-gradient(to right, var(--background-color), black);
+    color: var(--text-color);
+    padding: 40px 0;
+    font-family: var(--font-heading);
+    font-size: 2em;
+    text-shadow: 0px 0px 10px var(--accent-color); /* Glow effect */
+    border-bottom: 2px solid var(--accent-color);
+}
+
+/* Navigation Bar (Basic, but looks good) */
+nav {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    margin: 20px auto;
+    width: 85%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px var(--shadow-light);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+    text-shadow: 0 0 8px var(--accent-color);
+}
+
+/* Sections (from styles.css, blended with ai-2.css colors) */
+section {
+    padding: 35px;
+    width: 80%;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.05); /* Slight transparency */
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px var(--shadow-light);
+}
+
+/* Buttons (Kept simple, glow effect from styles.css) */
+button {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px var(--accent-color);
+}
+
+button:hover {
+    background-color: #008cff; /* Slightly different glow on hover */
+    transform: scale(1.05);
+}
+
+/* Links */
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+a:hover {
+    color: var(--accent-color);
+    text-shadow: 0px 0px 10px var(--accent-color);
+}
+
+/* Footer (Kept simple) */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    margin-top: 30px;
+    border-top: 2px solid var(--accent-color);
+}
+
+/* Basic Mobile-Friendly Tweaks */
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+        padding: 25px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+}

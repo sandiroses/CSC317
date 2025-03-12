@@ -1,0 +1,158 @@
+/*
+   AI-Generated CSS: Cute Pink Cloud Theme ☁️🎀
+   Generated using AI based on the following prompt:
+   "Create a soft, pastel pink-themed CSS design with clouds, rounded elements, and a dreamy aesthetic. 
+    Colors: pastel pink, soft white, peach pink. Typography: Poppins and Quicksand."
+*/
+
+/* Theme Colors */
+:root {
+    --primary-color: #ffe6f2;
+    --accent-color: #ffcad4;
+    --text-color: #444444;
+    --cloud-white: #ffffff;
+    --lavender: #f3c6ff;
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Quicksand', sans-serif;
+}
+
+/* General Styling */
+body {
+    font-family: var(--font-body);
+    background: linear-gradient(to bottom, var(--primary-color), var(--cloud-white));
+    background-attachment: fixed;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Cloudy Background */
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://www.transparenttextures.com/patterns/clouds.png'); /* Light Cloud Overlay */
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+    color: var(--text-color);
+    padding: 40px 0;
+    font-family: var(--font-heading);
+    font-size: 1.5em;
+    text-shadow: 2px 2px 5px var(--shadow-light);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+}
+
+/* Floating Cloud Navigation */
+nav {
+    background: var(--cloud-white);
+    padding: 15px 0;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px var(--shadow-light);
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: var(--lavender);
+    text-shadow: 0 0 10px var(--lavender);
+}
+
+/* Cloud-like Sections */
+section {
+    padding: 40px;
+    width: 80%;
+    margin: 20px auto;
+    background: var(--cloud-white);
+    border-radius: 50px;
+    box-shadow: 0px 10px 20px var(--shadow-light);
+    position: relative;
+}
+
+/* Buttons */
+button {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px var(--shadow-light);
+}
+
+button:hover {
+    background-color: var(--lavender);
+    transform: scale(1.1);
+}
+
+/* Links */
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+a:hover {
+    color: var(--accent-color);
+    text-shadow: 0px 0px 8px var(--accent-color);
+}
+
+/* Footer */
+footer {
+    background: var(--accent-color);
+    padding: 20px;
+    margin-top: 40px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
