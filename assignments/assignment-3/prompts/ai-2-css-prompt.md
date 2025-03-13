@@ -1,4 +1,3 @@
-PROMPT:
 # AI-Generated CSS Prompt for `ai-2.css`
 
 Use the attached image of a **galaxy night sky** as inspiration to design a CSS theme for a personal portfolio website.  

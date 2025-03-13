@@ -36,4 +36,3 @@ This combined the **bioluminescent glow effects** from `styles.css` and the **ga
 
 ## **Preferred Version**  
 The **hybrid version (`hybrid.css`)** is the best because it blends both themes and fixes AI inconsistencies.  
-
