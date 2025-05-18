@@ -1,0 +1,198 @@
+/* styles/styles.css */
+
+/* Theme Colors */
+:root {
+    --primary-color: #00ffff;
+    --secondary-color: #ff00ff;
+    --background-color: #0d0d0d;
+    --text-color: #ffffff;
+    --glow-blue: #00f7ff;
+    --glow-purple: #8a2be2;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
+}
+
+/* Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #001f3f;
+    color: white;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-family: var(--font-heading);
+    font-size: 2.5em;
+    text-shadow: 0 0 10px var(--glow-blue);
+    margin-bottom: 0.5rem;
+}
+
+header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+/* Navigation */
+nav {
+    background: #111;
+    padding: 15px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--glow-blue);
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: var(--glow-purple);
+    text-shadow: 0 0 15px var(--glow-purple);
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    width: 80%;
+    margin: 20px auto;
+    text-align: left;
+    background: #111;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+section h2 {
+    font-family: var(--font-heading);
+    font-size: 2em;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+/* Lists */
+ul {
+    list-style-position: inside;
+    margin-bottom: 1rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+th, td {
+    border: 1px solid var(--glow-blue);
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background: var(--glow-blue);
+    color: var(--background-color);
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Projects */
+#projects a {
+    color: var(--glow-blue);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+#projects a:hover {
+    color: var(--glow-purple);
+    text-shadow: 0 0 15px var(--glow-purple);
+}
+
+/* Footer */
+footer {
+    background: #111;
+    padding: 20px 0;
+    margin-top: 2rem;
+}
+
+footer h2 {
+    font-family: var(--font-heading);
+    font-size: 1.5em;
+    margin-bottom: 0.5rem;
+}
+
+footer p, footer a {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+/* Contact Link */
+#contact a {
+    color: var(--glow-blue);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+#contact a:hover {
+    color: var(--glow-purple);
+    text-shadow: 0 0 10px var(--glow-purple);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    section {
+        width: 95%;
+        padding: 20px;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+}
